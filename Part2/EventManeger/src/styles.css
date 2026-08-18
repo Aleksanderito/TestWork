@@ -16,9 +16,6 @@ button { cursor: pointer; }
   width: min(1180px, calc(100% - 56px));
   margin: 0 auto;
 }
-
-/* Верхний блок сделан в духе крупной навигации аэропортовых сайтов:
-   тёмный фон, белая типографика и минимум декоративных элементов. */
 .hero {
   position: relative;
   min-height: 650px;
