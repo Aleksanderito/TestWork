@@ -1,0 +1,21 @@
+services:
+  api:
+    image: node:22-alpine
+    container_name: training-events-api
+    working_dir: /app
+    command: ["node", "server.mjs"]
+    volumes:
+      - ./server.mjs:/app/server.mjs:ro
+      - ./data:/app/data
+    restart: unless-stopped
+
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: training-events-spa
+    depends_on:
+      - api
+    ports:
+      - "8080:80"
+    restart: unless-stopped

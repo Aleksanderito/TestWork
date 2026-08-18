@@ -1,0 +1,8 @@
+[project]
+name = "webtutor-super-boss"
+version = "0.1.0"
+description = "External Python worker demo for WebTutor candidate processing"
+requires-python = ">=3.10"
+
+[tool.ruff]
+line-length = 100

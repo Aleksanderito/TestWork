@@ -1,0 +1,2 @@
+# No third-party dependencies are required for the demo implementation.
+# Add an HTTP/SOAP client only when the real WebTutor integration is defined.
